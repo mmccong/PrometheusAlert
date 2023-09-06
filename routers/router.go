@@ -47,6 +47,17 @@ func init() {
 	//webhook
 	beego.Router("/prometheusalert", &controllers.PrometheusAlertController{}, "get,post:PrometheusAlert")
 
+	//feishu
+	beego.Router("/feishu/userids", &controllers.LarkController{}, "get,post:GetIds")
+	beego.Router("/feishu/openids", &controllers.LarkController{}, "get,post:GetOpenIds")
+	beego.Router("/feishu/chatid", &controllers.LarkController{}, "get,post:GetChatId")
+	beego.Router("/feishu/send", &controllers.LarkController{}, "post:SendMessage")
+	beego.Router("/feishu/sendcardmessage", &controllers.LarkController{}, "post:SendFeiShuCardMessage")
+	beego.Router("/feishu/createchatandinviteuser", &controllers.LarkController{}, "post:CreateChatAndInviteUser")
+	//challenge
+	beego.Router("/feishu/bothook", &controllers.LarkController{}, "get,post:BotHook")
+
+	//CreateChatAndInviteUser
 	// gitlab
 	beego.Router("/gitlab/weixin", &controllers.GitlabController{}, "post:GitlabWeixin")
 	beego.Router("/gitlab/dingding", &controllers.GitlabController{}, "post:GitlabDingding")
@@ -54,6 +65,9 @@ func init() {
 
 	// hotreload
 	beego.Router("/-/reload", &controllers.ConfigController{}, "post:Reload")
+	// Todo
+	// Email
+	// Feishu
 
 	//已经下线的接口
 	//beego.Router("/prometheus/dingding", &controllers.PrometheusController{},"post:PrometheusRouter")

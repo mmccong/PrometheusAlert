@@ -1,0 +1,114 @@
+{
+  "elements": [
+    {
+      "tag": "markdown",
+      "content": "**⏰域名到期提醒**"
+    },
+    {
+      "tag": "column_set",
+      "flex_mode": "none",
+      "background_style": "grey",
+      "columns": [
+        {
+          "tag": "column",
+          "width": "weighted",
+          "weight": 1,
+          "vertical_align": "top",
+          "elements": [
+            {
+              "tag": "markdown",
+              "content": "**二级域名**",
+              "text_align": "center"
+            }
+          ]
+        },
+        {
+          "tag": "column",
+          "width": "weighted",
+          "weight": 1,
+          "vertical_align": "top",
+          "elements": [
+            {
+              "tag": "markdown",
+              "content": "**颁发日期**",
+              "text_align": "center"
+            }
+          ]
+        },
+        {
+          "tag": "column",
+          "width": "weighted",
+          "weight": 1,
+          "vertical_align": "top",
+          "elements": [
+            {
+              "tag": "markdown",
+              "content": "**截止日期**",
+              "text_align": "center"
+            }
+          ]
+        },
+        {
+          "tag": "column",
+          "width": "weighted",
+          "weight": 1,
+          "vertical_align": "top",
+          "elements": [
+            {
+              "tag": "markdown",
+              "content": "**剩余天数**",
+              "text_align": "center"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "column_set",
+      "flex_mode": "none",
+      "background_style": "default",
+      "columns": [
+        {
+          "tag": "column",
+          "width": "weighted",
+          "weight": 1,
+          "vertical_align": "top",
+          "elements": [
+            {
+              "tag": "markdown",
+              "content": "${person}",
+              "text_align": "center"
+            }
+          ]
+        },
+        {
+          "tag": "column",
+          "width": "weighted",
+          "weight": 1,
+          "vertical_align": "top",
+          "elements": [
+            {
+              "tag": "markdown",
+              "content": "${time}",
+              "text_align": "center"
+            }
+          ]
+        },
+        {
+          "tag": "column",
+          "width": "weighted",
+          "weight": 1,
+          "vertical_align": "top",
+          "elements": [
+            {
+              "tag": "markdown",
+              "content": "${week_rate}",
+              "text_align": "center"
+            }
+          ]
+        }
+      ],
+      "_varloop": "${group_table}"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+    "zh_cn": [{
+      "tag": "column_set",
+      "flex_mode": "none",
+      "background_style": "default",
+      "columns": [{
+        "tag": "column",
+        "width": "weighted",
+        "weight": 1,
+        "vertical_align": "top",
+        "elements": [{
+          "tag": "div",
+          "text": {
+            "content": "**🔴 报警服务：**\nQA 7",
+            "tag": "lark_md"
+          }
+        }]
+      }, {
+        "tag": "column",
+        "width": "weighted",
+        "weight": 1,
+        "vertical_align": "top",
+        "elements": [{
+          "tag": "div",
+          "text": {
+            "content": "**🕐 时间：**\n2023-02-23 20:17:51",
+            "tag": "lark_md"
+          }
+        }]
+      }]
+    }, {
+      "tag": "column_set",
+      "flex_mode": "none",
+      "background_style": "default",
+      "columns": [{
+        "tag": "column",
+        "width": "weighted",
+        "weight": 1,
+        "vertical_align": "top",
+        "elements": [{
+          "tag": "div",
+          "text": {
+            "content": "**👤 一级值班：**\n[@王冰](https://open.feishu.cn/document/ugTN1YjL4UTN24CO1UjN/uUzN1YjL1cTN24SN3UjN?from=mcb)",
+            "tag": "lark_md"
+          }
+        }]
+      }, {
+        "tag": "column",
+        "width": "weighted",
+        "weight": 1,
+        "vertical_align": "top",
+        "elements": [{
+          "tag": "markdown",
+          "content": "**👤 二级值班：**\n[@李天天](https://open.feishu.cn/document/ugTN1YjL4UTN24CO1UjN/uUzN1YjL1cTN24SN3UjN?from=mcb)"
+        }]
+      }]
+    }, {
+      "tag": "div",
+      "text": {
+        "content": "支付方式 支付成功率低于50%",
+        "tag": "plain_text"
+      }
+    }, {
+      "alt": {
+        "content": "",
+        "tag": "plain_text"
+      },
+      "img_key": "img_v2_8b2ebeaf-c97c-411d-a4dc-4323e8cba10g",
+      "tag": "img"
+    }, {
+      "elements": [{
+        "content": "🔴 支付失败数  🔵 支付成功数",
+        "tag": "plain_text"
+      }],
+      "tag": "note"
+    }, {
+      "actions": [{
+        "tag": "button",
+        "text": {
+          "content": "跟进处理",
+          "tag": "plain_text"
+        },
+        "type": "primary",
+        "value": {
+          "sloved": "user"
+        }
+      }, {
+        "options": [{
+          "text": {
+            "content": "屏蔽10分钟",
+            "tag": "plain_text"
+          },
+          "value": "1"
+        }, {
+          "text": {
+            "content": "屏蔽30分钟",
+            "tag": "plain_text"
+          },
+          "value": "2"
+        }, {
+          "text": {
+            "content": "屏蔽1小时",
+            "tag": "plain_text"
+          },
+          "value": "3"
+        }, {
+          "text": {
+            "content": "屏蔽24小时",
+            "tag": "plain_text"
+          },
+          "value": "4"
+        }],
+        "placeholder": {
+          "content": "暂时屏蔽报警",
+          "tag": "plain_text"
+        },
+        "tag": "select_static",
+        "value": {
+          "key": "value"
+        }
+      }],
+      "tag": "action"
+    }, {
+      "tag": "hr"
+    }, {
+      "tag": "div",
+      "text": {
+        "content": "🙋🏼 [我要反馈误报](https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message-development-tutorial/introduction?from=mcb) | 📝 [录入报警处理过程](https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message-development-tutorial/introduction?from=mcb)",
+        "tag": "lark_md"
+      }
+    }]
+}
